@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Coffee Scout: Mood-based Cafe Finder",
+  "version": "1.0.0",
+  "description": "Suggests the best nearby coffee places based on your mood and environment (weather, time). Minimalist and privacy-conscious.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Find coffee nearby"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.open-meteo.com/*",
+    "https://overpass-api.de/*"
+  ]
+}

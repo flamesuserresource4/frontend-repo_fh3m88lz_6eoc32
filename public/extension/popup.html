@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee Scout</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app" class="popup">
+      <header class="header">
+        <div class="logo">☕</div>
+        <div class="title">
+          <h1>Coffee Scout</h1>
+          <p class="subtitle">Mood-based cafe picks</p>
+        </div>
+      </header>
+
+      <section class="mood">
+        <div class="chips" id="mood-chips">
+          <!-- mood chips rendered by JS -->
+        </div>
+      </section>
+
+      <section class="card" id="suggestion">
+        <div class="spline-cover">
+          <spline-viewer loading="lazy" url="https://prod.spline.design/g5OaHmrKTDxRI7Ig/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="info">
+          <h2 id="headline">Finding great coffee...</h2>
+          <p id="context" class="context"></p>
+        </div>
+      </section>
+
+      <section class="list" id="results"></section>
+
+      <footer class="footer">
+        <button id="refresh" class="btn">Refresh</button>
+        <a id="open-maps" class="btn secondary" target="_blank" rel="noopener">Open in Maps</a>
+      </footer>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+  </body>
+</html>
